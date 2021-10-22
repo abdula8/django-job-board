@@ -1,0 +1,14 @@
+frontent templates
+virtualenv:
+    - create
+    - activate [windows: source ./scripts/activate]
+    - pip install
+    - deactivate
+
+- upload project on github
+
+
+url: path
+view: logic
+models: db
+templates: frontend
