@@ -13,3 +13,10 @@ view: logic
 models: db
 templates: frontend
 
+
+
+
+Relations:
+    - One to Many   [author - posts]        Foreignkey
+    - Many to Many  [user - group admins]
+    - One to One    [user - profile]
