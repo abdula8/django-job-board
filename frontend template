@@ -1,6 +1,6 @@
 frontent templates
 virtualenv:
-    - create
+    - create python -m venv NAME
     - activate [windows: source ./scripts/activate]
     - pip install
     - deactivate
@@ -17,6 +17,16 @@ templates: frontend
 
 
 Relations:
-    - One to Many   [author - posts]        Foreignkey
+    - One to Many   [author - posts]
+            author can post many posts but single post cannot be posted by many authors         
+                    (foriegn key)    Foreignkey
     - Many to Many  [user - group admins]
+            user can join multiple groups nad each group can be owned by multiple users(admins)
     - One to One    [user - profile]
+            each user has only single profile
+
+
+
+
+static files: files related to [frontend] e.g. images, css, JS
+media files: [upload] images, (like profiles picture, users upload it) 
